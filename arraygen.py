@@ -1,10 +1,10 @@
 #one function for sorted, one function for unsorted
 import random
 
-def listGen():
+def listGen(length):
     randList = []
     
-    for i in range(0,10000):
-        n = random.randint(1, 10000 + 1)
+    for i in range(0, length):
+        n = random.randint(1, length)
         randList.append(n)
     return randList
