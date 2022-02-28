@@ -1,3 +1,5 @@
+import time
+from arraygen import *
 '''
 create array to feed into sort
 function to create unsorted
@@ -12,4 +14,12 @@ merge sort
 
 ??? sort
 '''
+
+unsortedList = listGen()
+sortedList = listGen()
+reverseList = listGen()
+
+sortedList.sort()
+reverseList.sort()
+reverseList.reverse()
 
