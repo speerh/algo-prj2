@@ -36,32 +36,35 @@ out.write("BUBBLE SORT:\n\n")
 
 #BUBBLE SORT UNSORTED
 timeElapsed = 0
-tStart = time.time()
+
 temp = unsortedList
+tStart = time.time()
 bubbleSort(temp)
-out.write("\nUnsorted: ",)
 timeElapsed = time.time() - tStart
 timeElapsed = round(timeElapsed, 5)
+out.write("\nUnsorted: " + str(timeElapsed))
 print(timeElapsed)
 
 #BUBBLE SORT SORTED
 timeElapsed = 0
-tStart = time.time()
+
 temp = sortedList
+tStart = time.time()
 bubbleSort(temp)
-out.write("\nSorted: ",)
 timeElapsed = time.time() - tStart
 timeElapsed = round(timeElapsed, 5)
+out.write("\nSorted: " + str(timeElapsed))
 print(timeElapsed)
 
 #BUBBLE SORT REVERSED
 timeElapsed = 0
-tStart = time.time()
+
 temp = reverseList
+tStart = time.time()
 bubbleSort(temp)
-out.write("\nReversed: ",)
 timeElapsed = time.time() - tStart
 timeElapsed = round(timeElapsed, 5)
+out.write("\nReversed: " + str(timeElapsed))
 print(timeElapsed)
 
 #------QUICK SORT------
@@ -72,32 +75,35 @@ out.write("\n\nQUICK SORT:\n\n")
 
 #QUICK SORT UNSORTED
 timeElapsed = 0
-tStart = time.time()
+
 temp = unsortedList
+tStart = time.time()
 quickSort(temp, 0, len(temp) - 1)
-out.write("\nUnsorted: ",)
 timeElapsed = time.time() - tStart
 timeElapsed = round(timeElapsed, 5)
+out.write("\nUnsorted: " + str(timeElapsed))
 print(timeElapsed)
 
 #QUICK SORT SORTED
 timeElapsed = 0
-tStart = time.time()
+
 temp = sortedList
+tStart = time.time()
 quickSort(temp, 0, len(temp) - 1)
-out.write("\nSorted: ",)
 timeElapsed = time.time() - tStart
 timeElapsed = round(timeElapsed, 5)
+out.write("\nSorted: " + str(timeElapsed))
 print(timeElapsed)
 
 #QUICK SORT REVERSED
 timeElapsed = 0
-tStart = time.time()
+
 temp = reverseList
+tStart = time.time()
 quickSort(temp, 0, len(temp) - 1)
-out.write("\nReversed: ",)
 timeElapsed = time.time() - tStart
 timeElapsed = round(timeElapsed, 5)
+out.write("\nReversed: " + str(timeElapsed))
 print(timeElapsed)
 
 #------MERGE SORT------
@@ -107,11 +113,48 @@ out.write("\n\nMERGE SORT:\n\n")
 
 #MERGE SORT UNSORTED 
 timeElapsed = 0
-tStart = time.time()
+
 temp = unsortedList
+tStart = time.time()
 mergeSort(temp)
-out.write("\nUnsorted: ",)
 timeElapsed = time.time() - tStart
 timeElapsed = round(timeElapsed, 5)
+out.write("\nUnsorted: " + str(timeElapsed))
+print(timeElapsed)
+
+#------RADIX SORT------
+out.write("\n\nRADIX SORT:\n\n")
+
+#RADIX SORT UNSORTED
+timeElapsed = 0
+
+temp = unsortedList
+tStart = time.time()
+radixSort(temp)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+out.write("\nUnsorted: " + str(timeElapsed))
+print(timeElapsed)
+
+#RADIX SORT SORTED
+timeElapsed = 0
+
+temp = sortedList
+tStart = time.time()
+radixSort(temp)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+out.write("\nSorted: " + str(timeElapsed))
+print(timeElapsed)
+
+#RADIX SORT REVERSED
+timeElapsed = 0
+
+temp = reverseList
+tStart = time.time()
+radixSort(temp)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+out.write("\nReversed: " + str(timeElapsed))
 print(timeElapsed)
 
