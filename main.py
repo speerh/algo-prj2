@@ -16,7 +16,7 @@ merge sort
 ??? sort
 '''
 
-length = 10000
+length = 1000
 
 unsortedList = listGen(length)
 sortedList = listGen(length)
@@ -35,19 +35,34 @@ out = open('out.txt', 'w')
 out.write("BUBBLE SORT:\n\n")
 
 #BUBBLE SORT UNSORTED
+timeElapsed = 0
+tStart = time.time()
 temp = unsortedList
 bubbleSort(temp)
 out.write("\nUnsorted: ",)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+print(timeElapsed)
 
 #BUBBLE SORT SORTED
+timeElapsed = 0
+tStart = time.time()
 temp = sortedList
 bubbleSort(temp)
 out.write("\nSorted: ",)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+print(timeElapsed)
 
 #BUBBLE SORT REVERSED
+timeElapsed = 0
+tStart = time.time()
 temp = reverseList
 bubbleSort(temp)
 out.write("\nReversed: ",)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+print(timeElapsed)
 
 #------QUICK SORT------
 #Best: O(n log n) - sorted
@@ -56,28 +71,47 @@ out.write("\nReversed: ",)
 out.write("\n\nQUICK SORT:\n\n")
 
 #QUICK SORT UNSORTED
+timeElapsed = 0
+tStart = time.time()
 temp = unsortedList
 quickSort(temp, 0, len(temp) - 1)
 out.write("\nUnsorted: ",)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+print(timeElapsed)
 
 #QUICK SORT SORTED
+timeElapsed = 0
+tStart = time.time()
 temp = sortedList
 quickSort(temp, 0, len(temp) - 1)
 out.write("\nSorted: ",)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+print(timeElapsed)
 
 #QUICK SORT REVERSED
-temp = reversedList
+timeElapsed = 0
+tStart = time.time()
+temp = reverseList
 quickSort(temp, 0, len(temp) - 1)
 out.write("\nReversed: ",)
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+print(timeElapsed)
 
 #------MERGE SORT------
 #Best/Worst/Average: O(n log n)
 out.write("\n\nMERGE SORT:\n\n")
 
 
-#MERGE SORT UNSORTED
+#MERGE SORT UNSORTED 
+timeElapsed = 0
+tStart = time.time()
 temp = unsortedList
 mergeSort(temp)
 out.write("\nUnsorted: ",)
-
+timeElapsed = time.time() - tStart
+timeElapsed = round(timeElapsed, 5)
+print(timeElapsed)
 
