@@ -41,7 +41,6 @@ temp = unsortedList
 tStart = time.time()
 bubbleSort(temp)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nUnsorted: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -52,7 +51,6 @@ temp = sortedList
 tStart = time.time()
 bubbleSort(temp)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nSorted: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -63,7 +61,6 @@ temp = reverseList
 tStart = time.time()
 bubbleSort(temp)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nReversed: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -80,7 +77,6 @@ temp = unsortedList
 tStart = time.time()
 quickSort(temp, 0, len(temp) - 1)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nUnsorted: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -91,7 +87,6 @@ temp = sortedList
 tStart = time.time()
 quickSort(temp, 0, len(temp) - 1)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nSorted: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -102,7 +97,6 @@ temp = reverseList
 tStart = time.time()
 quickSort(temp, 0, len(temp) - 1)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nReversed: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -118,8 +112,27 @@ temp = unsortedList
 tStart = time.time()
 mergeSort(temp)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nUnsorted: " + str(timeElapsed))
+print(timeElapsed)
+
+#MERGE SORT SORTED 
+timeElapsed = 0
+
+temp = sortedList
+tStart = time.time()
+mergeSort(temp)
+timeElapsed = time.time() - tStart
+out.write("\nSorted: " + str(timeElapsed))
+print(timeElapsed)
+
+#MERGE SORT UNSORTED 
+timeElapsed = 0
+
+temp = reverseList
+tStart = time.time()
+mergeSort(temp)
+timeElapsed = time.time() - tStart
+out.write("\nReversed: " + str(timeElapsed))
 print(timeElapsed)
 
 #------RADIX SORT------
@@ -132,7 +145,6 @@ temp = unsortedList
 tStart = time.time()
 radixSort(temp)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nUnsorted: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -143,7 +155,6 @@ temp = sortedList
 tStart = time.time()
 radixSort(temp)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nSorted: " + str(timeElapsed))
 print(timeElapsed)
 
@@ -154,7 +165,6 @@ temp = reverseList
 tStart = time.time()
 radixSort(temp)
 timeElapsed = time.time() - tStart
-timeElapsed = round(timeElapsed, 5)
 out.write("\nReversed: " + str(timeElapsed))
 print(timeElapsed)
 
